@@ -7,9 +7,6 @@ class Solution {
         while(x > reversed){
             reversed = reversed * 10 + x % 10;
             x = x / 10;
-            System.out.println("reversed: " + reversed);
-            System.out.println("x: " + x);
-
         }
         return (x == reversed || x == reversed / 10);
     }
