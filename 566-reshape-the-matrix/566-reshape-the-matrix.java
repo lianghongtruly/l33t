@@ -3,9 +3,10 @@ class Solution {
         int row = mat.length;
         int col = mat[0].length;
         if(row*col != r*c){
-        return mat;
+            return mat;
         }
-        int out[][] = new int[r][c];
+        
+        int result[][] = new int[r][c];
         int x = 0;
         int y = 0;
         for(int i = 0; i < r;i++){
@@ -14,12 +15,11 @@ class Solution {
                     x++;
                     y = 0;
                 }
-                
-                out[i][j] = mat[x][y];
+                result[i][j] = mat[x][y];
                 y++;
             }
         }
-        return out;
+        return result;
         
         
     }
