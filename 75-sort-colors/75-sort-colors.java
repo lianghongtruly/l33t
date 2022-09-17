@@ -1,27 +1,26 @@
 class Solution {
     public void sortColors(int[] nums) {
-        int red = 0;
         int white = 0;
+        int red = 0;
         int blue = 0;
-        for(int i = 0; i < nums.length; i++){
-            switch(nums[i]){
-                case 0: red++;
+        
+        for(int i = 0; i < nums.length; i++) {
+            switch(nums[i]) {
+                case 0: 
+                    white++;
                     break;
-                case 1: white++;
+                case 1:
+                    red++;
                     break;
-                case 2: blue++;    
+                case 2:
+                    blue++;
+                    break;
             }
         }
-        System.out.println("Red:" + red + " White:" + white + " Blue:" + blue);
-        for(int i = 0; i < red; i++){
-            nums[i] = 0;
-        }
-        for(int i = red; i < red+white; i++){
-            nums[i] = 1;
-        }
-        for(int i = white+red; i < white+red+blue; i++){
-            nums[i] = 2;
-        }
+        
+        for (int i = 0; i < white; i++) nums[i] = 0;
+        for (int i = white; i < white + red; i++) nums[i] = 1;
+        for (int i = red + white; i < white + red + blue; i++) nums[i] =2;
     }
         
 //         //Arrays.sort(nums);
