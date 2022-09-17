@@ -13,18 +13,9 @@ class Solution {
                     break;
             }
         }
-        for(int i = 0; i < red; i++) 
-        {
-            nums[i] = 0;
-        }
-        for(int i = red; i < red+white; i++) 
-        {
-            nums[i] = 1;
-        }
-        for(int i = white+red; i < white+red+blue; i++) 
-        {
-            nums[i] = 2;
-        }
+        for(int i = 0; i < red; i++) {nums[i] = 0;}
+        for(int i = red; i < red+white; i++) {nums[i] = 1;}
+        for(int i = white+red; i < white+red+blue; i++) {nums[i] = 2;}
     }
         
 //         //Arrays.sort(nums);
