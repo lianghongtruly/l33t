@@ -9,7 +9,8 @@ class Solution {
                     break;
                 case 1: white++;
                     break;
-                case 2: blue++;    
+                case 2: blue++;  
+                    break;
             }
         }
         // System.out.println("Red:" + red + " White:" + white + " Blue:" + blue);
