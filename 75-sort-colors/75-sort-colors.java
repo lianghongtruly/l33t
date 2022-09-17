@@ -12,16 +12,10 @@ class Solution {
                 case 2: blue++;    
             }
         }
-        System.out.println("Red:" + red + " White:" + white + " Blue:" + blue);
-        for(int i = 0; i < red; i++){
-            nums[i] = 0;
-        }
-        for(int i = red; i < red+white; i++){
-            nums[i] = 1;
-        }
-        for(int i = white+red; i < white+red+blue; i++){
-            nums[i] = 2;
-        }
+        // System.out.println("Red:" + red + " White:" + white + " Blue:" + blue);
+        for(int i = 0; i < red; i++) nums[i] = 0;
+        for(int i = red; i < red+white; i++) nums[i] = 1;
+        for(int i = white+red; i < white+red+blue; i++) nums[i] = 2;
     }
         
 //         //Arrays.sort(nums);
